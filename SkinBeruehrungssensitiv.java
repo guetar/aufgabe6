@@ -5,24 +5,19 @@
  */
 public class SkinBeruehrungssensitiv extends Skin{
     
-    //VB: b!=null
-    //NB: return "" wenn Skin mit b kompatibel ist
-    public String fromBediener(){
-    return "Valid";
-    }
-
     @Override
-    public String fromSchwerarbeiter(Schwerarbeiter s) {
+    public String fromSchwerarbeiter() {
         return null;
     }
 
+    //NB: return "" wenn Skin mit Bediener kompatibel ist
     @Override
-    public String fromBediener(Bediener b) {
-        return null;
+    public String fromBediener() {
+        return "";
     }
 
     @Override
-    public String fromBeschuetzer(Beschuetzer b) {
+    public String fromBeschuetzer() {
         return null;
     }
     

@@ -8,20 +8,20 @@
  * @author Matthias
  */
 public class SkinGepanzert extends Skin{
-    //VB: b!=null
-    //NB: return "" wenn Skin mit b kompatibel ist
+    
+    //NB: return "" wenn Skin mit Beschuetzer kompatibel ist
     @Override
-    public String fromBeschuetzer(Beschuetzer b){
+    public String fromBeschuetzer(){
     return "";
     }
 
     @Override
-    public String fromSchwerarbeiter(Schwerarbeiter s) {
+    public String fromSchwerarbeiter() {
         return null;
     }
 
     @Override
-    public String fromBediener(Bediener b) {
+    public String fromBediener() {
         return null;
     }
 }
