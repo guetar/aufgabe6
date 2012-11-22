@@ -1,0 +1,8 @@
+
+/**
+ *
+ * @author Matthias
+ */
+class Schwerarbeiter {
+    
+}
