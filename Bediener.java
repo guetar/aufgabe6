@@ -9,7 +9,7 @@ public abstract class Bediener extends Android {
         super(snr, skin);
     }
     
-    public String validateSkin(Skin s) {
-        return s.fromBediener(this);
+    public String validateSkin(Skin skin) {
+        return skin.fromBediener(this);
     }
 }

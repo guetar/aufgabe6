@@ -14,7 +14,7 @@ public abstract class Skin {
     //VB: b!=null
     //NB: return "" wenn Skin mit b kompatibel ist
     public String fromBediener(Bediener b) {
-        return null;
+        return "Invalid";
     }
 
     //VB: b!=null

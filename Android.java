@@ -15,10 +15,11 @@ public abstract class Android {
         this.skin = skin;
 //        this.software = software;
 //        this.security = security;
+        System.out.println(isValid());
     }
     
-    public String isValid(Android a) {
-        return a.validateSkin(skin);
+    public String isValid() {
+        return this.validateSkin(skin);
 //        a.validateSoftware(software);
 //        a.validateSecurity(security);
     }
