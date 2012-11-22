@@ -6,12 +6,24 @@
 public abstract class Android {
     
     private final int snr;
-    private String[] available_skins = { "beruehrungssensitiv", "hochfest", "gepanzert" };
-    private String[] available_software  = { "hilfskraft", "bauarbeiter", "gesellschafter" };
+    private Skin skin;
+//    private Software software;
+//    private Security security;
     
-    public Android(int snr) {
+    public Android(int snr, Skin skin) { //, Software software, Security security) {
         this.snr = snr;
+        this.skin = skin;
+//        this.software = software;
+//        this.security = security;
     }
+    
+    public String isValid(Android a) {
+        return a.validateSkin(skin);
+//        a.validateSoftware(software);
+//        a.validateSecurity(security);
+    }
+    
+    public abstract String validateSkin(Skin skin);
     
     protected void log() {
         
