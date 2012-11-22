@@ -3,10 +3,9 @@
  *
  * @author guetar
  */
-public abstract class Bediener{
+public abstract class Bediener extends Android {
     
     public String validateSkin(Skin s) {
-        s.usedByBediener(this);
-        return "placeholder";
+        return s.fromBediener(this);
     }
 }
