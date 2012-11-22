@@ -4,7 +4,7 @@
  * @author Matthias
  */
 public abstract class Skin {
-    
+
     //VB: s!=null
     //NB: return "" wenn Skin mit s kompatibel ist
     public abstract String fromSchwerarbeiter(Schwerarbeiter s);
