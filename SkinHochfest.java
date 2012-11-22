@@ -1,19 +1,22 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 /**
  *
  * @author Matthias
  */
-public class SkinBeruehrungssensitiv extends Skin{
-    
+public class SkinHochfest extends Skin{
+
     @Override
     public String fromSchwerarbeiter() {
         return "";
     }
 
-    //NB: return "" wenn Skin mit Bediener kompatibel ist
     @Override
     public String fromBediener() {
-        return "";
+        return null;
     }
 
     @Override
