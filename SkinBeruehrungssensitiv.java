@@ -10,5 +10,20 @@ public class SkinBeruehrungssensitiv extends Skin{
     public String fromBediener(){
     return "";
     }
+
+    @Override
+    public String fromSchwerarbeiter(Schwerarbeiter s) {
+        return null;
+    }
+
+    @Override
+    public String fromBediener(Bediener b) {
+        return null;
+    }
+
+    @Override
+    public String fromBeschuetzer(Beschuetzer b) {
+        return null;
+    }
     
 }

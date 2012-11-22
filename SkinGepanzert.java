@@ -12,5 +12,15 @@ public class SkinGepanzert extends Skin{
     //NB: return "" wenn Skin mit b kompatibel ist
     public String fromBeschuetzer(Beschuetzer b){
     return "";
-    } 
+    }
+
+    @Override
+    public String fromSchwerarbeiter(Schwerarbeiter s) {
+        return null;
+    }
+
+    @Override
+    public String fromBediener(Bediener b) {
+        return null;
+    }
 }
