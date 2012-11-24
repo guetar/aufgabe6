@@ -12,33 +12,43 @@ public abstract class Software {
     
     //VB: s!=null
     //NB: return "" wenn Software mit Hilfskraft kompatibel ist
-    public abstract String fromHilfskraft();
+    public String fromHilfskraft(){
+    return null;
+    }
     
     //VB: b!=null
     //NB: return "" wenn Software mit Gesellschafter kompatibel ist
-    public abstract String fromGesellschafter();
-  
+    public String fromGesellschafter(){
+    return null;
+    }
     //VB: b!=null
     //NB: return "" wenn Software mit Bauarbeiter kompatibel ist
-    public abstract String fromBauarbeiter(); 
-
+    public String fromBauarbeiter(){
+    return null;
+    }
     //VB: b!=null
     //NB: return "" wenn Software mit ServiceTechniker kompatibel ist
-    public abstract String fromServiceTechniker(); 
-    
+    public String fromServiceTechniker(){
+    return null;
+    }
     //VB: b!=null
     //NB: return "" wenn Software mit Transportarbeiter kompatibel ist
-    public abstract String fromTransportarbeiter(); 
-    
+    public String fromTransportarbeiter(){
+    return null;
+    }
     //VB: b!=null
     //NB: return "" wenn Software mit Objektbewacher kompatibel ist
-    public abstract String fromObjektbewacher();     
-    
+    public String fromObjektbewacher(){
+    return null;
+    }
     //VB: b!=null
     //NB: return "" wenn Software mit Leibwaechter kompatibel ist
-    public abstract String fromLeibwaechter(); 
-    
+    public String fromLeibwaechter(){
+    return null;
+    }
     //VB: b!=null
     //NB: return "" wenn Software mit Kaempfer kompatibel ist
-    public abstract String fromKaempfer(); 
+    public String fromKaempfer(){
+    return null;
+    }
 }

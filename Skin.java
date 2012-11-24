@@ -3,7 +3,7 @@
  *
  * @author Matthias
  */
-public class Skin {
+public abstract class Skin {
 
     //VB: s!=null
     //NB: return "" wenn Skin mit Schwerarbeiter kompatibel ist
