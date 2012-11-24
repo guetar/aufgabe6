@@ -10,7 +10,7 @@ public abstract class Bediener extends Android {
     }
     
     @Override
-    public String validateSkin(Skin skin) {
-        return skin.fromBediener();
+    public String validateSkin() {
+        return getSkin().fromBediener();
     }
 }

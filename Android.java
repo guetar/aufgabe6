@@ -19,12 +19,12 @@ public abstract class Android {
     }
     
     public String isValid() {
-        return this.validateSkin(skin);
+        return this.validateSkin();
 //        a.validateSoftware(software);
 //        a.validateSecurity(security);
     }
     
-    public abstract String validateSkin(Skin skin);
+    public abstract String validateSkin();
     
     protected void log() {
         
@@ -33,5 +33,9 @@ public abstract class Android {
     //NB: snr!=null;
     public int getSnr() {
         return snr;
+    }
+    
+    protected Skin getSkin(){
+    return skin;
     }
 }
