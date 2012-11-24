@@ -15,7 +15,7 @@ public abstract class Android {
         this.skin = skin;
 //        this.software = software;
 //        this.security = security;
-        System.out.println(isValid());
+
     }
     
     public String isValid() {
