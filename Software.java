@@ -4,7 +4,7 @@
  */
 public abstract class Software {
     
-    private final byte sicherheitsstufe;
+    protected final byte sicherheitsstufe;
     
     public Software(byte sicherheitsstufe){
     this.sicherheitsstufe=sicherheitsstufe;
