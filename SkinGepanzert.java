@@ -9,11 +9,6 @@
  */
 public class SkinGepanzert extends Skin{
     
-    //NB: return "" wenn Skin mit Beschuetzer kompatibel ist
-    @Override
-    public String fromBeschuetzer(){
-    return "";
-    }
 
     @Override
     public String fromSchwerarbeiter() {
