@@ -10,6 +10,6 @@ public class Gesellschafter extends Bediener {
     }
     
     public String validateSkin(Skin skin) {
-        return skin.fromGesellschafter();
+        return skin.fromBediener();
     }
 }
