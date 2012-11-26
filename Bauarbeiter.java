@@ -6,8 +6,8 @@
 public class Bauarbeiter extends Schwerarbeiter {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public Bauarbeiter(int snr, Skin sk, Software sw, Security sc) {
-        super(snr, sk, sw, sc);
+    public Bauarbeiter(int snr, Skin sk, Software sw) {
+        super(snr, sk, sw);
     }
 
     @Override

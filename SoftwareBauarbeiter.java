@@ -9,7 +9,7 @@ public class SoftwareBauarbeiter extends Software {
         super(sc);
     }
 
-    //NB: return null wenn Software mit Bauarbeiter kompatibel ist
+    //NB: return null wenn Software von Bauarbeiter verwendet wird
     @Override
     public String fromBauarbeiter() {
         return null;

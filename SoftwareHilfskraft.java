@@ -9,7 +9,7 @@ public class SoftwareHilfskraft extends Software {
         super(sc);
     }
 
-    //NB: return null wenn Software mit Hilfskraft kompatibel ist
+    //NB: return null wenn Software von Hilfskraft verwendet wird
     @Override
     public String fromHilfskraft() {
         return null;

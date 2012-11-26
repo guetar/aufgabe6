@@ -9,7 +9,7 @@ public class SoftwareGesellschafter extends Software {
         super(sc);
     }
 
-    //NB: return null wenn Software mit Gesellschafter kompatibel ist
+    //NB: return null wenn Software von Gesellschafter verwendet wird
     @Override
     public String fromGesellschafter() {
         return null;

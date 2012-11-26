@@ -9,7 +9,7 @@ public class SoftwareObjektbewacher extends Software {
         super(sc);
     }
 
-    //NB: return null wenn Software mit Objektbewacher kompatibel ist
+    //NB: return null wenn Software von Objektbewacher verwendet wird
     @Override
     public String fromObjektbewacher() {
         return null;
