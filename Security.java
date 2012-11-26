@@ -5,69 +5,58 @@
  */
 public class Security {
 
-    //VB: s!=null
-    //NB: return "" wenn Sicherheitsstufe mit Schwerarbeiter kompatibel ist
-    public String fromSchwerarbeiter() {
-        return null;
-    }
-
-    //VB: b!=null
-    //NB: return "" wenn Sicherheitsstufe mit Bediener kompatibel ist
+    //NB: return ERROR wenn Security vom Bediener verwendet wird
     public String fromBediener() {
-        return null;
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Bediener verwendet werden!\n";
     }
 
-    //VB: b!=null
-    //NB: return "" wenn Sicherheitsstufe mit Beschuetzer kompatibel ist
+    //NB: return ERROR wenn Security vom Schwerarbeiter verwendet wird
+    public String fromSchwerarbeiter() {
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Schwerarbeiter verwendet werden!\n";
+    }
+
+    //NB: return ERROR wenn Security vom Beschuetzer verwendet wird
     public String fromBeschuetzer() {
-        return null;
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Beschuetzer verwendet werden!\n";
     }
 
-    //VB: s!=null
-    //NB: return "" wenn Software mit Hilfskraft kompatibel ist
+    //NB: return ERROR wenn Security von Hilfskraft verwendet wird
     public String fromHilfskraft() {
-        return null;
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht von Hilfskraft verwendet werden!\n";
     }
 
-    //VB: b!=null
-    //NB: return "" wenn Software mit Gesellschafter kompatibel ist
+    //NB: return ERROR wenn Security vom Gesellschafter verwendet wird
     public String fromGesellschafter() {
-        return null;
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Gesellschafter verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Bauarbeiter kompatibel ist
-
+    
+    //NB: return ERROR wenn Security vom Bauarbeiter verwendet wird
     public String fromBauarbeiter() {
-        return null;
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Bauarbeiter verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit ServiceTechniker kompatibel ist
-
-    public String fromServiceTechniker() {
-        return null;
+    
+    //NB: return ERROR wenn Security vom Servicetechniker verwendet wird
+    public String fromServicetechniker() {
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Techniker verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Transportarbeiter kompatibel ist
-
+    
+    //NB: return ERROR wenn Security vom Transportarbeiter verwendet wird
     public String fromTransportarbeiter() {
-        return null;
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Transportarbeiter verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Objektbewacher kompatibel ist
-
+    
+    //NB: return ERROR wenn Security vom mit Objektbewacher verwendet wird
     public String fromObjektbewacher() {
-        return null;
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Objektbewacher verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Leibwaechter kompatibel ist
-
+    
+    //NB: return ERROR wenn Security vom Leibwaechter verwendet wird
     public String fromLeibwaechter() {
-        return null;
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Leibwaechter verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Kaempfer kompatibel ist
-
+    
+    //NB: return ERROR wenn Security vom Sicherheitsstufe verwendet wird
     public String fromKaempfer() {
-        return null;
+        return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Kaempfer verwendet werden!\n";
     }
 }

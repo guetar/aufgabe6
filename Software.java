@@ -10,6 +10,11 @@ public abstract class Software {
     public Software(Security sc) {
         this.security = sc;
     }
+    
+    //NB: security!=null
+    public Security getSecurity() {
+        return security;
+    }
 
     //NB: return ERROR wenn Software vom Bediener verwendet wird
     public String fromBediener() {
@@ -42,7 +47,7 @@ public abstract class Software {
     }
     
     //NB: return ERROR wenn Software vom ServiceTechniker verwendet wird
-    public String fromServiceTechniker() {
+    public String fromServicetechniker() {
         return "ERROR in Software: Diese Software darf nicht vom Techniker verwendet werden!\n";
     }
     

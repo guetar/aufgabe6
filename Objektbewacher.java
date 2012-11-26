@@ -11,6 +11,7 @@ public class Objektbewacher extends Beschuetzer {
     }
 
     @Override
+    //NB: return null if valid, ERRORS otherwise
     public String validateSoftware() {
         return getSoftware().fromObjektbewacher();
     }

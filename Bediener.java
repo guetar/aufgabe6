@@ -21,4 +21,10 @@ public abstract class Bediener extends Android {
     public String validateSoftware() {
         return getSoftware().fromBediener();
     }
+    
+    @Override
+    //NB: return null if valid, ERRORS otherwise
+    public String validateSecurity() {
+        return getSoftware().getSecurity().fromBediener();
+    }
 }

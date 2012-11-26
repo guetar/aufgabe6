@@ -11,8 +11,20 @@ public abstract class Schwerarbeiter extends Android{
     }
     
     @Override
-    //NB: return empty string if valid, ERRORS otherwise
+    //NB: return null if valid, ERRORS otherwise
     public String validateSkin() {
-        return getSkin().fromSchwerarbeiter() + getSoftware().fromSchwerarbeiter();
+        return getSkin().fromSchwerarbeiter();
+    }
+    
+    @Override
+    //NB: return null if valid, ERRORS otherwise
+    public String validateSoftware() {
+        return getSoftware().fromSchwerarbeiter();
+    }
+    
+    @Override
+    //NB: return null if valid, ERRORS otherwise
+    public String validateSecurity() {
+        return getSoftware().getSecurity().fromSchwerarbeiter();
     }
 }

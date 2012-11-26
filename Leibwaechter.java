@@ -3,16 +3,16 @@
  *
  * @author Matthias
  */
-public class Bauarbeiter extends Schwerarbeiter {
+public class Leibwaechter extends Beschuetzer {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public Bauarbeiter(int snr, Skin sk, Software sw) {
+    public Leibwaechter(int snr, Skin sk, Software sw) {
         super(snr, sk, sw);
     }
 
     @Override
     //NB: return null if valid, ERRORS otherwise
     public String validateSoftware() {
-        return getSoftware().fromBauarbeiter();
+        return getSoftware().fromLeibwaechter();
     }
 }

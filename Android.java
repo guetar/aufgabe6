@@ -24,6 +24,7 @@ public abstract class Android {
         
         if(this.validateSkin() != null) ret += this.validateSkin();
         if(this.validateSoftware() != null) ret += this.validateSoftware();
+        if(this.validateSecurity() != null) ret += this.validateSecurity();
         
         return ret;
     }
@@ -31,6 +32,8 @@ public abstract class Android {
     public abstract String validateSkin();
     
     public abstract String validateSoftware();
+    
+    public abstract String validateSecurity();
     
     protected void log() {}
     
