@@ -5,9 +5,8 @@
  */
 public abstract class Bediener extends Android {
     
-    //VB: snr>0, skin!=null, software!=null;
-    public Bediener(int snr, Skin sk, Software sw) {
-        super(snr, sk, sw);
+    public Bediener(int snr, Skin skin, Software sw, Kit kit) {
+        super(snr, skin, sw, kit);
     }
     
     @Override

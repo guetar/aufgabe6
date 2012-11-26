@@ -8,13 +8,14 @@ public abstract class Android {
     private final int snr;
     private Skin skin;
     private Software software;
-//    private SensorenAktorenKit sensoren;
+    private Kit kit;
     
-    // VB: snr!=null, skin!=null, software!=null
-    public Android(int snr, Skin sk, Software sw) { //SensorenAktorenKit sensoren) {
+    public Android(int snr, Skin skin, Software software, Kit kit) {
         this.snr = snr;
-        this.skin = sk;
-        this.software = sw;
+        this.skin = skin;
+        this.software = software;
+        this.kit = kit;
+//        this.security = security;
 
     }
     
