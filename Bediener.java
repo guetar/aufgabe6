@@ -5,7 +5,7 @@
  */
 public abstract class Bediener extends Android {
     
-    public Bediener(int snr, Skin skin, Software sw, double kit) {
+    public Bediener(int snr, Skin skin, Software sw, Kit kit) {
         super(snr, skin, sw, kit);
     }
     
