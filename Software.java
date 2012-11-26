@@ -26,9 +26,9 @@ public abstract class Software {
         return "ERROR in Software: Diese Software darf nicht vom Beschuetzer verwendet werden!\n";
     }
 
-    //NB: return ERROR wenn Software von der Hilfskraft verwendet wird
+    //NB: return ERROR wenn Software von Hilfskraft verwendet wird
     public String fromHilfskraft() {
-        return "ERROR in Software: Diese Software darf nicht von der Hilfskraft verwendet werden!\n";
+        return "ERROR in Software: Diese Software darf nicht von Hilfskraft verwendet werden!\n";
     }
 
     //NB: return ERROR wenn Software vom Gesellschafter verwendet wird

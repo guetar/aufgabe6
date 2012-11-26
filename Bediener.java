@@ -10,8 +10,14 @@ public abstract class Bediener extends Android {
     }
     
     @Override
-    //NB: return empty string if valid, ERRORS otherwise
+    //NB: return null if valid, ERRORS otherwise
     public String validateSkin() {
-        return getSkin().fromBediener() + getSoftware().fromBediener();
+        return getSkin().fromBediener();
+    }
+    
+    @Override
+    //NB: return null if valid, ERRORS otherwise
+    public String validateSoftware() {
+        return getSoftware().fromBediener();
     }
 }

@@ -29,7 +29,7 @@ public class Test {
         
         System.out.println("Invalid:");
         
-        g = new Gesellschafter(1, new SkinBeruehrungssensitiv(), new SoftwareGesellschafter(new Security2()));
+        g = new Gesellschafter(1, new SkinBeruehrungssensitiv(), new SoftwareGesellschafter(new Security12()));
         System.out.println(g.isValid());
     }
 }

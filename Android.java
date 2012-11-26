@@ -22,8 +22,10 @@ public abstract class Android {
     //NB: return empty string if valid, ERRORS otherwise
     public String isValid() {
         String ret = "";
-        ret += this.validateSkin();
-        ret += this.validateSoftware();
+        
+        if(this.validateSkin() != null) ret += this.validateSkin();
+        if(this.validateSoftware() != null) ret += this.validateSoftware();
+        
         return ret;
     }
     
