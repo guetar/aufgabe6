@@ -5,17 +5,8 @@
 public class SkinHochfest extends Skin{
 
     @Override
+    // NB: return ERROR wenn SkinHochfest vom Schwerarbeiter verwendet wird
     public String fromBediener() {
-        return null;
-    }
-
-    @Override
-    public String fromSchwerarbeiter() {
-        return "";
-    }
-    
-    @Override
-    public String fromBeschuetzer() {
-        return null;
+        return "ERROR in Skin: Die hochfeste Skin darf nicht vom Bediener verwendet werden!\n";
     }
 }

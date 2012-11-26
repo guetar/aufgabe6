@@ -1,18 +1,17 @@
+
 /**
  *
  * @author Matthias
  */
-public class SoftwareHilfskraft extends Software{
-    
-    public SoftwareHilfskraft(byte sicherheitsstufe){
-    super(sicherheitsstufe);
+public class SoftwareHilfskraft extends Software {
+
+    public SoftwareHilfskraft(Security sc) {
+        super(sc);
     }
-    
-    //VB: s!=null
-    //NB: return "" wenn Software mit Hilfskraft kompatibel ist
+
+    //NB: return null wenn Software mit Hilfskraft kompatibel ist
     @Override
-    public String fromHilfskraft(){
-    return "";
+    public String fromHilfskraft() {
+        return null;
     }
-    
 }

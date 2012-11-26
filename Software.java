@@ -1,54 +1,68 @@
+
 /**
  *
  * @author Matthias
  */
 public abstract class Software {
-    
-    protected final byte sicherheitsstufe;
-    
-    public Software(byte sicherheitsstufe){
-    this.sicherheitsstufe=sicherheitsstufe;
+
+    protected final Security security;
+
+    public Software(Security sc) {
+        this.security = sc;
+    }
+
+    //NB: return ERROR wenn Software vom Bediener verwendet wird
+    public String fromBediener() {
+        return "ERROR in Software: Diese Software darf nicht vom Bediener verwendet werden!\n";
+    }
+
+    //NB: return ERROR wenn Software vom Schwerarbeiter verwendet wird
+    public String fromSchwerarbeiter() {
+        return "ERROR in Software: Diese Software darf nicht vom Schwerarbeiter verwendet werden!\n";
+    }
+
+    //NB: return ERROR wenn Software vom Beschuetzer verwendet wird
+    public String fromBeschuetzer() {
+        return "ERROR in Software: Diese Software darf nicht vom Beschuetzer verwendet werden!\n";
+    }
+
+    //NB: return ERROR wenn Software von der Hilfskraft verwendet wird
+    public String fromHilfskraft() {
+        return "ERROR in Software: Diese Software darf nicht von der Hilfskraft verwendet werden!\n";
+    }
+
+    //NB: return ERROR wenn Software vom Gesellschafter verwendet wird
+    public String fromGesellschafter() {
+        return "ERROR in Software: Diese Software darf nicht vom Gesellschafter verwendet werden!\n";
     }
     
-    //VB: s!=null
-    //NB: return "" wenn Software mit Hilfskraft kompatibel ist
-    public String fromHilfskraft(){
-    return null;
+    //NB: return ERROR wenn Software vom Bauarbeiter verwendet wird
+    public String fromBauarbeiter() {
+        return "ERROR in Software: Diese Software darf nicht vom Bauarbeiter verwendet werden!\n";
     }
     
-    //VB: b!=null
-    //NB: return "" wenn Software mit Gesellschafter kompatibel ist
-    public String fromGesellschafter(){
-    return null;
+    //NB: return ERROR wenn Software vom ServiceTechniker verwendet wird
+    public String fromServiceTechniker() {
+        return "ERROR in Software: Diese Software darf nicht vom Techniker verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Bauarbeiter kompatibel ist
-    public String fromBauarbeiter(){
-    return null;
+    
+    //NB: return ERROR wenn Software vom Transportarbeiter verwendet wird
+    public String fromTransportarbeiter() {
+        return "ERROR in Software: Diese Software darf nicht vom Transportarbeiter verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit ServiceTechniker kompatibel ist
-    public String fromServiceTechniker(){
-    return null;
+    
+    //NB: return ERROR wenn Software vom mit Objektbewacher verwendet wird
+    public String fromObjektbewacher() {
+        return "ERROR in Software: Diese Software darf nicht vom Objektbewacher verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Transportarbeiter kompatibel ist
-    public String fromTransportarbeiter(){
-    return null;
+    
+    //NB: return ERROR wenn Software vom Leibwaechter verwendet wird
+    public String fromLeibwaechter() {
+        return "ERROR in Software: Diese Software darf nicht vom Leibwaechter verwendet werden!\n";
     }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Objektbewacher kompatibel ist
-    public String fromObjektbewacher(){
-    return null;
-    }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Leibwaechter kompatibel ist
-    public String fromLeibwaechter(){
-    return null;
-    }
-    //VB: b!=null
-    //NB: return "" wenn Software mit Kaempfer kompatibel ist
-    public String fromKaempfer(){
-    return null;
+    
+    //NB: return ERROR wenn Software vom Kaempfer verwendet wird
+    public String fromKaempfer() {
+        return "ERROR in Software: Diese Software darf nicht vom Kaempfer verwendet werden!\n";
     }
 }

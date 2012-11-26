@@ -1,18 +1,17 @@
+
 /**
  *
  * @author Matthias
  */
-public class SoftwareBauarbeiter extends Software{
-    
-    public SoftwareBauarbeiter(byte sicherheitsstufe){
-    super(sicherheitsstufe);
+public class SoftwareBauarbeiter extends Software {
+
+    public SoftwareBauarbeiter(Security sc) {
+        super(sc);
     }
-    
-    //VB: s!=null
-    //NB: return "" wenn Software mit Bauarbeiter kompatibel ist
+
+    //NB: return null wenn Software mit Bauarbeiter kompatibel ist
     @Override
-    public String fromBauarbeiter(){
-    return "";
+    public String fromBauarbeiter() {
+        return null;
     }
-    
 }

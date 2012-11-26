@@ -14,4 +14,9 @@ public abstract class Schwerarbeiter extends Android{
         return getSkin().fromSchwerarbeiter();
     }
     
+    @Override
+    //NB: return empty string if valid, ERRORS otherwise
+    public String validateSkin() {
+        return getSkin().fromSchwerarbeiter() + getSoftware().fromSchwerarbeiter();
+    }
 }

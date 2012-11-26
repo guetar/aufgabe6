@@ -11,8 +11,8 @@ public abstract class Beschuetzer extends Android{
     }  
 
     @Override
+    //NB: return empty string if valid, ERRORS otherwise
     public String validateSkin() {
-        return getSkin().fromBeschuetzer();
+        return getSkin().fromBeschuetzer() + getSoftware().fromBeschuetzer();
     }
-    
 }

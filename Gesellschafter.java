@@ -5,8 +5,9 @@
  */
 public class Gesellschafter extends Bediener {
     
-    public Gesellschafter(int snr, Skin skin, Software sw, double kit) {
-        super(snr, skin, sw, kit);
+    //VB: snr>0, skin!=null, software!=null, security!=null
+    public Gesellschafter(int snr, Skin sk, Software sw) {
+        super(snr, sk, sw);
     }
 
     @Override

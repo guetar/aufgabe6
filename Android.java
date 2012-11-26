@@ -19,34 +19,32 @@ public abstract class Android {
 
     }
     
+    //NB: return empty string if valid, ERRORS otherwise
     public String isValid() {
-        String ret;
-        ret=this.validateSkin();
-        if(ret!=null)
-            ret=this.validateSoftware();
+        String ret = "";
+        ret += this.validateSkin();
+        ret += this.validateSoftware();
         return ret;
-//        a.validateSoftware(software);
-//        a.validateSecurity(security);
     }
     
     public abstract String validateSkin();
     
     public abstract String validateSoftware();
     
-    protected void log() {
-        
-    }
+    protected void log() {}
     
     //NB: snr!=null;
     public int getSnr() {
         return snr;
     }
     
+    //NB: skin!=null;
     protected Skin getSkin(){
-    return skin;
+        return skin;
     }
     
+    //NB: software!=null;
     protected Software getSoftware(){
-    return software;
+        return software;
     }
 }

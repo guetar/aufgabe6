@@ -1,17 +1,17 @@
+
 /**
  *
  * @author Matthias
  */
-public class SoftwareGesellschafter extends Software{
-    
-    public SoftwareGesellschafter(byte sicherheitsstufe){
-    super(sicherheitsstufe);
+public class SoftwareGesellschafter extends Software {
+
+    public SoftwareGesellschafter(Security sc) {
+        super(sc);
     }
-    
-    //VB: s!=null
-    //NB: return "" wenn Software mit Gesellschafter kompatibel ist
+
+    //NB: return null wenn Software mit Gesellschafter kompatibel ist
     @Override
-    public String fromGesellschafter(){
-    return "";
+    public String fromGesellschafter() {
+        return null;
     }
 }
