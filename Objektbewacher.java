@@ -1,17 +1,17 @@
+
 /**
  *
  * @author Matthias
  */
-public class Objektbewacher extends Beschuetzer{
-    
-    public Objektbewacher(int snr, Skin skin, Software sw) {
-        super(snr, skin, sw);
+public class Objektbewacher extends Beschuetzer {
+
+    //VB: snr>0, skin!=null, software!=null, security!=null
+    public Objektbewacher(int snr, Skin sk, Software sw, Security sc) {
+        super(snr, sk, sw, sc);
     }
 
     @Override
     public String validateSoftware() {
         return getSoftware().fromObjektbewacher();
     }
-    
-    
 }

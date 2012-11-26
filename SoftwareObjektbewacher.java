@@ -1,17 +1,17 @@
+
 /**
  *
  * @author Matthias
  */
-public class SoftwareObjektbewacher extends Software{
-    
-    public SoftwareObjektbewacher(byte sicherheitsstufe){
-    super(sicherheitsstufe);
+public class SoftwareObjektbewacher extends Software {
+
+    public SoftwareObjektbewacher(Security sc) {
+        super(sc);
     }
-    
-    //VB: s!=null
-    //NB: return "" wenn Software mit Objektbewacher kompatibel ist
+
+    //NB: return null wenn Software mit Objektbewacher kompatibel ist
     @Override
-    public String fromObjektbewacher(){
-    return "";
+    public String fromObjektbewacher() {
+        return null;
     }
 }
