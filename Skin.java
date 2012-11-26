@@ -7,19 +7,13 @@ public abstract class Skin {
 
     //VB: s!=null
     //NB: return "" wenn Skin mit Schwerarbeiter kompatibel ist
-    public String fromSchwerarbeiter(){
-    return "";
-    }
+    public abstract String fromSchwerarbeiter();
     
     //VB: b!=null
     //NB: return "" wenn Skin mit Bediener kompatibel ist
-    public String fromBediener(){
-    return "";
-    }
+    public abstract String fromBediener();
   
     //VB: b!=null
     //NB: return "" wenn Skin mit Beschuetzer kompatibel ist
-    public String fromBeschuetzer(){
-    return "";
-    }
+    public abstract String fromBeschuetzer();
 }

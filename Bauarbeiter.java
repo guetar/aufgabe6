@@ -4,7 +4,7 @@
  */
 public class Bauarbeiter extends Schwerarbeiter{
     
-    public Bauarbeiter(int snr, Skin skin, Software sw) {
+    public Bauarbeiter(int snr, Skin skin, Software sw, double kit) {
         super(snr, skin, sw);
     }
 

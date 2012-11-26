@@ -1,22 +1,21 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author Matthias
  */
 public class SkinGepanzert extends Skin{
     
-
     @Override
-    public String fromSchwerarbeiter() {
+    public String fromBediener() {
         return null;
     }
 
     @Override
-    public String fromBediener() {
-        return null;
+    public String fromSchwerarbeiter() {
+        return "";
+    }
+
+    @Override
+    public String fromBeschuetzer() {
+        return "";
     }
 }

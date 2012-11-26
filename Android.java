@@ -8,12 +8,13 @@ public abstract class Android {
     private final int snr;
     private Skin skin;
     private Software software;
-//    private SensorenAktorenKit sensoren;
+    private Kit kit;
     
-    public Android(int snr, Skin skin, Software software) { //SensorenAktorenKit sensoren) {
+    public Android(int snr, Skin skin, Software software, Kit kit) {
         this.snr = snr;
         this.skin = skin;
         this.software = software;
+        this.kit = kit;
 //        this.security = security;
 
     }

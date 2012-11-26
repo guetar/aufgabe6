@@ -5,8 +5,8 @@
  */
 public abstract class Schwerarbeiter extends Android{
     
-    public Schwerarbeiter(int snr, Skin skin, Software sw) {
-        super(snr, skin, sw);
+    public Schwerarbeiter(int snr, Skin skin, Software sw, Kit kit) {
+        super(snr, skin, sw, kit);
     }  
     
     @Override
