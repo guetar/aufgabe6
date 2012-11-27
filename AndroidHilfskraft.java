@@ -6,8 +6,8 @@
 public class AndroidHilfskraft extends AndroidBediener {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public AndroidHilfskraft(int snr, Skin sk, Software sw, Kit kit) {
-        super("Hilfskraft", snr, sk, sw, kit);
+    public AndroidHilfskraft(Skin sk, Software sw, Kit kit) {
+        super("Hilfskraft", sk, sw, kit);
     }
 
     @Override

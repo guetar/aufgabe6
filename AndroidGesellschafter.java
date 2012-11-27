@@ -6,8 +6,8 @@
 public class AndroidGesellschafter extends AndroidBediener {
     
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public AndroidGesellschafter(int snr, Skin sk, Software sw, Kit kit) {
-        super("Gesellschafter", snr, sk, sw, kit);
+    public AndroidGesellschafter(Skin sk, Software sw, Kit kit) {
+        super("Gesellschafter", sk, sw, kit);
     }
     
     @Override

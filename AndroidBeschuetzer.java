@@ -6,8 +6,8 @@
 public abstract class AndroidBeschuetzer extends Android{
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public AndroidBeschuetzer(String bez, int snr, Skin sk, Software sw, Kit kit) {
-        super(bez, snr, sk, sw, kit);
+    public AndroidBeschuetzer(String bez, Skin sk, Software sw, Kit kit) {
+        super(bez, sk, sw, kit);
     }
     
     @Override

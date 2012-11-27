@@ -6,8 +6,8 @@
 public class AndroidServicetechniker extends AndroidSchwerarbeiter {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public AndroidServicetechniker(int snr, Skin sk, Software sw, Kit kit) {
-        super("Servicetechniker", snr, sk, sw, kit);
+    public AndroidServicetechniker(Skin sk, Software sw, Kit kit) {
+        super("Servicetechniker", sk, sw, kit);
     }
 
     @Override

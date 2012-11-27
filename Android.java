@@ -6,14 +6,15 @@
 public abstract class Android {
     
     private String bez;
+    private static int snrCount;
     private final int snr;
     private final Software software;
     private Skin skin;
     private Kit kit;
     
-    public Android(String bez, int snr, Skin skin, Software software, Kit kit) {
+    public Android(String bez, Skin skin, Software software, Kit kit) {
+        snr = ++snrCount;
         this.bez = bez;
-        this.snr = snr;
         this.skin = skin;
         this.skin.setSnr(this.snr);
         this.software = software;
@@ -21,30 +22,39 @@ public abstract class Android {
         this.kit = kit;
         this.kit.setSnr(this.snr);
         kit.install(software.getSecurity());
-//        this.security = security;
-
     }
     
     //NB: return empty string if valid, ERRORS otherwise
     public String isValid() {
-        String ret = toString() + "\n";
+        String ret = null;
         String tmp = "";
         
         tmp = validateSoftware();
-        if (tmp != null)    ret += tmp;
-        
+        ret = formatString(ret, tmp);
+
         tmp = validateSkin();
-        if (tmp != null)    ret += tmp;
-        
+        ret = formatString(ret, tmp);
+
         tmp = validateKit();
-        if (tmp != null)    ret += tmp;
+        ret = formatString(ret, tmp);
         
         tmp = validateSecurity();
-        if (tmp != null)    ret += tmp;
+        ret = formatString(ret, tmp);
         
         return ret;
     }
     
+    public String formatString(String ret, String tmp) {
+        if (tmp != null) {
+            if (ret != null) {
+                ret += tmp;
+            } else {
+                ret = tmp;
+            }
+        }
+        return ret;
+    }
+
     public abstract String validateSkin();
     
     public abstract String validateSoftware();

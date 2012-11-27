@@ -6,8 +6,8 @@
 public class AndroidKaempfer extends AndroidBeschuetzer {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public AndroidKaempfer(int snr, Skin sk, Software sw, Kit kit) {
-        super("Kaempfer", snr, sk, sw, kit);
+    public AndroidKaempfer(Skin sk, Software sw, Kit kit) {
+        super("Kaempfer", sk, sw, kit);
     }
 
     @Override

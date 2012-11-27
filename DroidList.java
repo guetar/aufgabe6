@@ -1,10 +1,5 @@
-
 import java.util.HashMap;
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Iterator;
 /**
  *
  * @author steff
@@ -25,5 +20,9 @@ public class DroidList {
     
     public Android find(int snr) {
         return droids.get(snr);
+    }
+    
+    public Iterator getIter() {
+        return droids.entrySet().iterator();
     }
 }

@@ -6,8 +6,8 @@
 public class AndroidLeibwaechter extends AndroidBeschuetzer {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public AndroidLeibwaechter(int snr, Skin sk, Software sw, Kit kit) {
-        super("Leibwaechter", snr, sk, sw, kit);
+    public AndroidLeibwaechter(Skin sk, Software sw, Kit kit) {
+        super("Leibwaechter", sk, sw, kit);
     }
 
     @Override
