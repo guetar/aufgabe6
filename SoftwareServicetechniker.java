@@ -6,7 +6,7 @@
 public class SoftwareServicetechniker extends Software {
 
     public SoftwareServicetechniker(Security sc) {
-        super(sc);
+        super("SW: Servicetechniker", sc);
     }
 
     //NB: return null wenn Software von Servicetechniker verwendet wird

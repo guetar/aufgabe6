@@ -6,7 +6,7 @@
 public class SoftwareKaempfer extends Software {
 
     public SoftwareKaempfer(Security sc) {
-        super(sc);
+        super("SW: Kaempfer", sc);
     }
 
     //NB: return null wenn Software von Kaempfer verwendet wird

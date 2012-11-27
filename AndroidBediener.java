@@ -3,10 +3,10 @@
  *
  * @author guetar
  */
-public abstract class Bediener extends Android {
+public abstract class AndroidBediener extends Android {
     
-    public Bediener(int snr, Skin skin, Software sw, Kit kit) {
-        super(snr, skin, sw, kit);
+    public AndroidBediener(String bez, int snr, Skin skin, Software sw, Kit kit) {
+        super(bez, snr, skin, sw, kit);
     }
     
     @Override
@@ -26,4 +26,5 @@ public abstract class Bediener extends Android {
     public String validateSecurity() {
         return getSoftware().getSecurity().fromBediener();
     }
+    
 }

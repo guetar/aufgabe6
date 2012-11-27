@@ -6,7 +6,7 @@
 public class SoftwareObjektbewacher extends Software {
 
     public SoftwareObjektbewacher(Security sc) {
-        super(sc);
+        super("SW: Objektbewacher", sc);
     }
 
     //NB: return null wenn Software von Objektbewacher verwendet wird

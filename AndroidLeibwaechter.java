@@ -3,11 +3,11 @@
  *
  * @author Matthias
  */
-public class Leibwaechter extends Beschuetzer {
+public class AndroidLeibwaechter extends AndroidBeschuetzer {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public Leibwaechter(int snr, Skin sk, Software sw) {
-        super(snr, sk, sw);
+    public AndroidLeibwaechter(int snr, Skin sk, Software sw, Kit kit) {
+        super("Leibwaechter", snr, sk, sw, kit);
     }
 
     @Override

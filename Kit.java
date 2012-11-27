@@ -1,24 +1,31 @@
-
 /**
  *
  * @author Matthias
  */
 public abstract class Kit {
-    private double leistung;
     
-    //VB: leistung>0
-    public Kit(double leistung){
-        this.leistung=leistung;
+    private String bez;
+    private double leistung;
+    private Security sec;
+    
+    public Kit(String bez, double leistung){
+        this.bez = bez;
+        this.leistung = leistung;
     }
     
-    //VB: s!=null
-    //NB: return "" wenn Software mit Hilfskraft kompatibel ist
-    public abstract String fromHilfskraft();
-    public abstract String fromGesellschafter();
-    public abstract String fromBauarbeiter();
-    public abstract String fromServiceTechniker();
-    public abstract String fromTransportarbeiter();
-    public abstract String fromObjektbewacher();
-    public abstract String fromLeibwaechter();
-    public abstract String fromKaempfer();
+    public Security getSecurity() {
+        return sec;
+    }
+    
+    void install(Security security) {
+        this.sec = security;
+    }
+    
+    public abstract String checkSecurity();
+    
+    
+    @Override
+    public String toString() {
+        return bez + ": " + leistung + " KW";
+    }
 }

@@ -3,7 +3,7 @@
  *
  * @author guetar
  */
-public class Security45 extends Security {
+public class Security4 extends Security3 {
     
     @Override
     //NB: return null wenn Software vom Beschuetzer verwendet wird
@@ -22,4 +22,27 @@ public class Security45 extends Security {
     public String fromLeibwaechter() {
         return null;
     }
+    
+    
+    
+    //----Kit-Check:
+    
+    @Override
+    public String fromKitSehrSchwerarbeiter() {
+        return null;
+    }
+
+    @Override
+    public String fromKitBeschuetzer() {
+        return null;
+    }   
+    
+    @Override
+    public String KitSchwerarbeiter() {
+        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+    }
+    
+    public String toString() {
+        return "Securitylevel: 4";
+    }    
 }

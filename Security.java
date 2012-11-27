@@ -5,6 +5,8 @@
  */
 public class Security {
 
+    //----Androidtyp-Check:
+    
     //NB: return ERROR wenn Security vom Bediener verwendet wird
     public String fromBediener() {
         return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Bediener verwendet werden!\n";
@@ -58,5 +60,33 @@ public class Security {
     //NB: return ERROR wenn Security vom Sicherheitsstufe verwendet wird
     public String fromKaempfer() {
         return "ERROR in Security: Diese Sicherheitsstufe darf nicht vom Kaempfer verwendet werden!\n";
+    }
+    
+    
+    
+    //----Kit-Check:
+    
+    public String fromKitHilfskraft() {
+        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+    }
+
+    public String fromKitGesellschafter() {
+        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+    }
+
+    public String KitSchwerarbeiter() {
+        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+    }
+
+    public String fromKitSehrSchwerarbeiter() {
+        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+    }
+
+    public String fromKitBeschuetzer() {
+        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+    }    
+    
+    public String fromKitKaempfer() {
+        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
     }
 }

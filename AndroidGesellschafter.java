@@ -3,11 +3,11 @@
  *
  * @author guetar
  */
-public class Gesellschafter extends Bediener {
+public class AndroidGesellschafter extends AndroidBediener {
     
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public Gesellschafter(int snr, Skin sk, Software sw) {
-        super(snr, sk, sw);
+    public AndroidGesellschafter(int snr, Skin sk, Software sw, Kit kit) {
+        super("Gesellschafter", snr, sk, sw, kit);
     }
     
     @Override

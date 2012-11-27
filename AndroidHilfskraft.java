@@ -3,11 +3,11 @@
  *
  * @author Matthias
  */
-public class Hilfskraft extends Bediener {
+public class AndroidHilfskraft extends AndroidBediener {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public Hilfskraft(int snr, Skin sk, Software sw) {
-        super(snr, sk, sw);
+    public AndroidHilfskraft(int snr, Skin sk, Software sw, Kit kit) {
+        super("Hilfskraft", snr, sk, sw, kit);
     }
 
     @Override

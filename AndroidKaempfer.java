@@ -3,11 +3,11 @@
  *
  * @author Matthias
  */
-public class Kaempfer extends Beschuetzer {
+public class AndroidKaempfer extends AndroidBeschuetzer {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public Kaempfer(int snr, Skin sk, Software sw) {
-        super(snr, sk, sw);
+    public AndroidKaempfer(int snr, Skin sk, Software sw, Kit kit) {
+        super("Kaempfer", snr, sk, sw, kit);
     }
 
     @Override

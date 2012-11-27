@@ -1,23 +1,27 @@
-
 /**
  *
  * @author Matthias
  */
 public abstract class Skin {
-    //Standardmaessig hat jeder Android eine Skin, daher ueberall null
+    private String bez;
     
-    //NB: return null wenn die Skin vom Schwerarbeiter verwendet wird
+    public Skin(String bez) {
+        this.bez = bez;
+    }
+    
     public String fromSchwerarbeiter() {
-        return null;
+        return "ERROR in Skin: Diese Skin darf nicht vom Schwerarbeiter verwendet werden!\n";
     }
 
-    //NB: return null wenn die Skin vom Schwerarbeiter verwendet wird
     public String fromBediener() {
-        return null;
+        return "ERROR in Skin: Diese Skin darf nicht vom Bediener verwendet werden!\n";
     }
 
-    //NB: return null wenn die Skin vom Beschuetzer verwendet wird
     public String fromBeschuetzer() {
-        return null;
+        return "ERROR in Skin: Diese Skin darf nicht vom Bediener verwendet werden!\n";
+    }
+    
+    public String toString() {
+        return bez;
     }
 }

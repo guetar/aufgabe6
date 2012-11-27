@@ -3,11 +3,11 @@
  *
  * @author Matthias
  */
-public class Servicetechniker extends Schwerarbeiter {
+public class AndroidServicetechniker extends AndroidSchwerarbeiter {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public Servicetechniker(int snr, Skin sk, Software sw) {
-        super(snr, sk, sw);
+    public AndroidServicetechniker(int snr, Skin sk, Software sw, Kit kit) {
+        super("Servicetechniker", snr, sk, sw, kit);
     }
 
     @Override

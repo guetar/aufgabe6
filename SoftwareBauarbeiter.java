@@ -6,7 +6,7 @@
 public class SoftwareBauarbeiter extends Software {
 
     public SoftwareBauarbeiter(Security sc) {
-        super(sc);
+        super("SW: Bauarbeiter", sc);
     }
 
     //NB: return null wenn Software von Bauarbeiter verwendet wird

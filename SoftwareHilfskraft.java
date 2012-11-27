@@ -6,7 +6,7 @@
 public class SoftwareHilfskraft extends Software {
 
     public SoftwareHilfskraft(Security sc) {
-        super(sc);
+        super("SW: Hilfskraft", sc);
     }
 
     //NB: return null wenn Software von Hilfskraft verwendet wird

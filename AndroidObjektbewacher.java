@@ -3,11 +3,11 @@
  *
  * @author Matthias
  */
-public class Objektbewacher extends Beschuetzer {
+public class AndroidObjektbewacher extends AndroidBeschuetzer {
 
     //VB: snr>0, skin!=null, software!=null, security!=null
-    public Objektbewacher(int snr, Skin sk, Software sw) {
-        super(snr, sk, sw);
+    public AndroidObjektbewacher(int snr, Skin sk, Software sw, Kit kit) {
+        super("Objektbewacher", snr, sk, sw, kit);
     }
 
     @Override

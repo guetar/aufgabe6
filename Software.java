@@ -5,9 +5,11 @@
  */
 public abstract class Software {
 
+    private String bez;
     protected final Security security;
 
-    public Software(Security sc) {
+    public Software(String bez, Security sc) {
+        this.bez = bez;
         this.security = sc;
     }
     
@@ -69,5 +71,10 @@ public abstract class Software {
     //NB: return ERROR wenn Software vom Kaempfer verwendet wird
     public String fromKaempfer() {
         return "ERROR in Software: Diese Software darf nicht vom Kaempfer verwendet werden!\n";
+    }
+    
+    @Override
+    public String toString() {
+        return bez;
     }
 }
