@@ -7,8 +7,8 @@ public abstract class Android {
     
     private String bez;
     private final int snr;
+    private final Software software;
     private Skin skin;
-    private Software software;
     private Kit kit;
     
     public Android(String bez, int snr, Skin skin, Software software, Kit kit) {
@@ -27,16 +27,16 @@ public abstract class Android {
         String ret = toString() + "\n";
         String tmp = "";
         
-        tmp = validateSkin();
-        if (tmp != null)    ret += tmp;
-        
         tmp = validateSoftware();
         if (tmp != null)    ret += tmp;
         
-        tmp = validateSecurity();
+        tmp = validateSkin();
         if (tmp != null)    ret += tmp;
         
         tmp = validateKit();
+        if (tmp != null)    ret += tmp;
+        
+        tmp = validateSecurity();
         if (tmp != null)    ret += tmp;
         
         return ret;
@@ -81,5 +81,9 @@ public abstract class Android {
     @Override
     public String toString() {
         return bez + ",  " +  software + ",  " + skin + ",  " + kit + ",  " + software.getSecurity();
+    }
+    
+    public int getSNR() {
+        return snr;
     }
 }

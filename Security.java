@@ -1,7 +1,8 @@
-
 /**
  *
  * @author guetar
+ * 
+ * ToDo: Implement three Laws of Robotics!!!
  */
 public class Security {
 
@@ -67,26 +68,26 @@ public class Security {
     //----Kit-Check:
     
     public String fromKitHilfskraft() {
-        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+        return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }
 
     public String fromKitGesellschafter() {
-        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+        return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }
 
     public String KitSchwerarbeiter() {
-        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+        return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }
 
     public String fromKitSehrSchwerarbeiter() {
-        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+        return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }
 
     public String fromKitBeschuetzer() {
-        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+        return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }    
     
     public String fromKitKaempfer() {
-        return "ERROR in Kit: Sicherheitsstufe fuer dieses Kit ist zu niedrig!\n";
+        return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }
 }
