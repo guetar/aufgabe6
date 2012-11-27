@@ -4,9 +4,16 @@
  */
 public abstract class Skin {
     private String bez;
+    private Integer snr;
     
     public Skin(String bez) {
         this.bez = bez;
+    }
+    
+    //VB: snr ist Seriennummer des Androiden zu dem dieses Teil gehoert
+    //NB: this.snr==snr
+    public final void setSnr(int snr){
+    this.snr=snr;
     }
     
     public String fromSchwerarbeiter() {

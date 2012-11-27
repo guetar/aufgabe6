@@ -7,6 +7,7 @@ public abstract class Kit {
     private String bez;
     private double leistung;
     private Security sec;
+    private Integer snr;
     
     public Kit(String bez, double leistung){
         this.bez = bez;
@@ -19,6 +20,12 @@ public abstract class Kit {
     
     void install(Security security) {
         this.sec = security;
+    }
+
+    //VB: snr ist Seriennummer des Androiden zu dem dieses Teil gehoert
+    //NB: this.snr==snr
+    public final void setSnr(int snr){
+    this.snr=snr;
     }
     
     public abstract String checkSecurity();

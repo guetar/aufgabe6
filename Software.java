@@ -7,6 +7,7 @@ public abstract class Software {
 
     private String bez;
     protected final Security security;
+    private Integer snr;
 
     public Software(String bez, Security sc) {
         this.bez = bez;
@@ -16,6 +17,12 @@ public abstract class Software {
     //NB: security!=null
     public Security getSecurity() {
         return security;
+    }
+    
+    //VB: snr ist Seriennummer des Androiden zu dem dieses Teil gehoert
+    //NB: this.snr==snr
+    public final void setSnr(int snr){
+    this.snr=snr;
     }
 
     //NB: return ERROR wenn Software vom Bediener verwendet wird

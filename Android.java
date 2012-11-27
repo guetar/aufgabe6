@@ -15,8 +15,11 @@ public abstract class Android {
         this.bez = bez;
         this.snr = snr;
         this.skin = skin;
+        this.skin.setSnr(this.snr);
         this.software = software;
+        this.software.setSnr(this.snr);
         this.kit = kit;
+        this.kit.setSnr(this.snr);
         kit.install(software.getSecurity());
 //        this.security = security;
 
