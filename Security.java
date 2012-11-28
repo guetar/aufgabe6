@@ -67,26 +67,32 @@ public class Security {
     
     //----Kit-Check:
     
+    //NB: return ERROR wenn Security in KitHilfskraft verwendet wird
     public String fromKitHilfskraft() {
         return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }
 
+    //NB: return ERROR wenn Security in KitGesellschafter verwendet wird
     public String fromKitGesellschafter() {
         return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }
 
+    //NB: return ERROR wenn Security in KitSchwerarbeiter verwendet wird
     public String KitSchwerarbeiter() {
         return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }
 
+    //NB: return ERROR wenn Security in KitSehrSchwerarbeiter verwendet wird
     public String fromKitSehrSchwerarbeiter() {
         return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }
 
+    //NB: return ERROR wenn Security in KitBeschuetzer verwendet wird
     public String fromKitBeschuetzer() {
         return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }    
     
+    //NB: return ERROR wenn Security in KitKaempfer verwendet wird
     public String fromKitKaempfer() {
         return "ERROR in Kit: Dieses Kit darf nicht mit dieser Sicherheitsstufe verwendet werden!\n";
     }

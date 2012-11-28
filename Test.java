@@ -21,28 +21,55 @@ public class Test {
          * 
          */
         
-        System.out.println("Testen von korrekter Androiderzeugung und deren Parameter\n(Wenn null unter den Androiden steht gibt es keine Fehler!)\n\nValid:\n");
+        System.out.println("---------------------------------------------------------\n"
+                + "Wenn null unter den Androiden steht gibt es keine Fehler!\n"
+                + "---------------------------------------------------------\n"
+                + "\nTesten von korrekter Androiderzeugung und deren Parameter:\n"
+                + "\nValid:\n");
         
         AndroidGesellschafter gVal = new AndroidGesellschafter(new SkinBeruehrungssensitiv(), new SoftwareGesellschafter(new Security1()), new KitGesellschafter());
+        AndroidHilfskraft hVal = new AndroidHilfskraft(new SkinBeruehrungssensitiv(), new SoftwareHilfskraft(new Security2()), new KitHilfskraft());
+        AndroidBauarbeiter bVal = new AndroidBauarbeiter(new SkinBeruehrungssensitiv(), new SoftwareBauarbeiter(new Security3()), new KitSchwerarbeiter());
+        AndroidServicetechniker sVal = new AndroidServicetechniker(new SkinHochfest(), new SoftwareServicetechniker(new Security3()), new KitSchwerarbeiter());
+        AndroidTransportarbeiter tVal = new AndroidTransportarbeiter(new SkinGepanzert(), new SoftwareTransportarbeiter(new Security4()), new KitSehrSchwerarbeiter());
         AndroidObjektbewacher oVal = new AndroidObjektbewacher(new SkinGepanzert(),new SoftwareObjektbewacher(new Security4()), new KitBeschuetzer());
-        AndroidBauarbeiter bVal = new AndroidBauarbeiter(new SkinHochfest(), new SoftwareBauarbeiter(new Security3()), new KitSchwerarbeiter());
+        AndroidKaempfer kVal = new AndroidKaempfer(new SkinGepanzert(), new SoftwareKaempfer(new Security5()), new KitKaempfer());
+        
         System.out.println(gVal + "\n" + gVal.isValid());
-        System.out.println(oVal + "\n" + oVal.isValid());
+        System.out.println(hVal + "\n" + hVal.isValid());
         System.out.println(bVal + "\n" + bVal.isValid());
+        System.out.println(sVal + "\n" + sVal.isValid());
+        System.out.println(tVal + "\n" + tVal.isValid());
+        System.out.println(oVal + "\n" + oVal.isValid());
+        System.out.println(kVal + "\n" + kVal.isValid());
 
         
         System.out.println("\nInvalid:\n");
         
-        AndroidGesellschafter gInval = new AndroidGesellschafter(new SkinHochfest(),new SoftwareBauarbeiter(new Security1()), new KitSehrSchwerarbeiter());
-        AndroidObjektbewacher oInval = new AndroidObjektbewacher(new SkinGepanzert(),new SoftwareGesellschafter(new Security1()), new KitGesellschafter());
+        AndroidGesellschafter gInval = new AndroidGesellschafter(new SkinHochfest(),new SoftwareBauarbeiter(new Security5()), new KitSehrSchwerarbeiter());
+        AndroidHilfskraft hInval = new AndroidHilfskraft(new SkinBeruehrungssensitiv(), new SoftwareBauarbeiter(new Security1()), new KitHilfskraft());
         AndroidBauarbeiter bInval = new AndroidBauarbeiter(new SkinGepanzert(),new SoftwareGesellschafter(new Security1()), new KitKaempfer());
+        AndroidServicetechniker sInval = new AndroidServicetechniker(new SkinGepanzert(), new SoftwareServicetechniker(new Security4()), new KitSchwerarbeiter());
+        AndroidTransportarbeiter tInval = new AndroidTransportarbeiter(new SkinHochfest(), new SoftwareTransportarbeiter(new Security3()), new KitSehrSchwerarbeiter());
+        AndroidObjektbewacher oInval = new AndroidObjektbewacher(new SkinGepanzert(),new SoftwareGesellschafter(new Security1()), new KitGesellschafter());
+        AndroidKaempfer kInval = new AndroidKaempfer(new SkinBeruehrungssensitiv(), new SoftwareKaempfer(new Security5()), new KitKaempfer());
+        
         System.out.println(gInval + "\n" + gInval.isValid());
-        System.out.println(oInval + "\n" + oInval.isValid());
+        System.out.println(hInval + "\n" + hInval.isValid());
         System.out.println(bInval + "\n" + bInval.isValid());
+        System.out.println(sInval + "\n" + sInval.isValid());
+        System.out.println(tInval + "\n" + tInval.isValid());
+        System.out.println(oInval + "\n" + oInval.isValid());
+        System.out.println(kInval + "\n" + kInval.isValid());
         
         
-        System.out.println("\nTesten von Multimethoden und mehrfachem dynamischen Binden:\n");
-
+        
+        System.out.println("\nTesten von Multimethoden und mehrfachem dynamischen Binden:");
+        
+        System.out.println("\nErzeugen:\n"
+                + "Security scA = new Security1();\n"
+                + "Software swA = new SoftwareGesellschafter(scA);\n"
+                + "Android genA mit diesen Objekten erzeugen und testen:");
         Security scA = new Security1();
         Software swA = new SoftwareGesellschafter(scA);
         Skin skA = new SkinBeruehrungssensitiv();
@@ -51,31 +78,42 @@ public class Test {
         System.out.println(genA + "\n" + genA.isValid());
         
         
+        System.out.println("\nErzeugen:\n"
+                + "Security scB = new Security4();\n"
+                + "Software swB = new SoftwareBauarbeiter(scB);\n"
+                + "Android genB mit diesen Objekten erzeugen und testen:");
         Security3 scB = new Security4();
         Software swB = new SoftwareBauarbeiter(scB);
         Skin skB = new SkinHochfest();
         Kit kitB = new KitSehrSchwerarbeiter();
-        AndroidSchwerarbeiter genB = new AndroidBauarbeiter(skB, swB, kitB);
+        Android genB = new AndroidBauarbeiter(skB, swB, kitB);
         System.out.println(genB + "\n" + genB.isValid());
         
-        Security scC = new Security5();
-        Software swC = new SoftwareKaempfer(scC);
+        
+        System.out.println("\nErzeugen:\n"
+                + "Security scC = new Security1();\n"
+                + "Software swC = new SoftwareGesellschafter(scC);\n"
+                + "Android genC mit diesen Objekten erzeugen und testen:");
+        Security scC = new Security1();
+        Software swC = new SoftwareGesellschafter(scC);
         Skin skC = new SkinBeruehrungssensitiv();
-        Kit kitC = new KitGesellschafter();
-        AndroidKaempfer genC = new AndroidKaempfer(skC, swC, kitC);
+        Kit kitC = new KitSchwerarbeiter();
+        Android genC = new AndroidTransportarbeiter(skC, swC, kitC);
         System.out.println(genC + "\n" + genC.isValid());
         
         
-        System.out.println("\nTesten der Liste, 4 gueltige (2 davon zweimal), 2 ungueltige werden hinzugefeugt\n\nvollstaendige Liste mit 4 gueltigen Androiden:");
+        
+        System.out.println("\nTesten der Liste, Einfuegen 4 gueltige (2 davon zweimal) und 2 ungueltige"
+                + "\n\nvollstaendige Liste mit 4 gueltigen Androiden:");
         
         list.insert(gVal);
-        list.insert(oVal);
-        list.insert(oVal);
-        list.insert(genA);
-        list.insert(genB);
-        list.insert(genB);
+        list.insert(hVal);
+        list.insert(hVal);
+        list.insert(kInval);
+        list.insert(bVal);
+        list.insert(bVal);
         list.insert(gInval);
-        list.insert(genC);
+        list.insert(kVal);
         
         Iterator it = list.getIter();
         while (it.hasNext()) {

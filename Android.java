@@ -24,7 +24,7 @@ public abstract class Android {
         kit.install(software.getSecurity());
     }
     
-    //NB: return empty string if valid, ERRORS otherwise
+    //NB: return empty string wenn valid, sonst ERRORS 
     public String isValid() {
         String ret = null;
         String tmp = "";
@@ -44,6 +44,8 @@ public abstract class Android {
         return ret;
     }
     
+    // NB: Im Falle eines augetretenen Fehlers sollen diese im String ret
+    // zurueckgegeben werden, Ansonsten null 
     public String formatString(String ret, String tmp) {
         if (tmp != null) {
             if (ret != null) {
@@ -65,37 +67,34 @@ public abstract class Android {
         return kit.checkSecurity();
     }
     
-    protected void log() {}
-    
-    //NB: snr!=null;
+    //NB: snr!=null
     public int getSnr() {
         return snr;
     }
     
-    
-    
-    
-    // Gibts nen Grund warum diese Methoden protected sind??
-    
-    //NB: skin!=null;
-    protected Skin getSkin(){
+    //NB: skin!=null
+    public Skin getSkin(){
         return skin;
     }
     
-    //NB: software!=null;
-    protected Software getSoftware(){
+    //NB: software!=null
+    public Software getSoftware(){
         return software;
     }
     
-    protected Kit getKit() {
+    // NB: kit != null
+    public Kit getKit() {
         return kit;
     }
     
     @Override
+    // VB: Die Variablen duerfen nicht null sein
+    // NB: Rueckgabe einer String-Repraesentation dieses Androids
     public String toString() {
         return bez + ",  " +  software + ",  " + skin + ",  " + kit + ",  " + software.getSecurity();
     }
     
+    // NB: snr != null
     public int getSNR() {
         return snr;
     }

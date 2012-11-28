@@ -34,10 +34,13 @@ public class Security3 extends Security {
     //----Kit-Check:
 
     @Override
+    //NB: return null (Kein Fehler) wenn dieses Security 
+    //    in KitSchwerarbeiter verwendet wird
     public String KitSchwerarbeiter() {
         return null;
     }
     
+    //NB: retournieren einer String-Repraesantition dieses Objekts
     public String toString() {
         return "Securitylevel: 3";
     }

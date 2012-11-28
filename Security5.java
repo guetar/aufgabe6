@@ -15,10 +15,14 @@ public class Security5 extends Security {
     
     //----Kit-Check:
     
-    public String fromKitGefechtsSet() {
+    @Override
+    //NB: return null (Kein Fehler) wenn dieses Security 
+    //    in KitKaempfer verwendet wird
+    public String fromKitKaempfer() {
         return null;
     }
 
+    //NB: retournieren einer String-Repraesantition dieses Objekts
     public String toString() {
         return "Securitylevel: 5";
     }    
